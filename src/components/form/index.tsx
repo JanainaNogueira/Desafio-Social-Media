@@ -1,18 +1,36 @@
 import Style from './index.module.css'
 import Input from '../../components/input'
-import User from '../../assets/img/user.svg'
-import Lock from  '../../assets/img/lock.svg'
+import iconUser from '../../assets/img/user.svg'
+import iconLock from  '../../assets/img/lock.svg'
+import iconFingerprint from '../../assets/img/fingerprint.svg'
+import iconCalendar from '../../assets/img/calendar.svg'
+import iconAt from '../../assets/img/at.svg'
+import iconConfirm from '../../assets/img/confirm.svg'
 import Button from '../../components/button'
-
-function Formulario(){
+interface propsForm{
+    name:string
+}
+const Formulario:React.FC<propsForm>=({name})=>{
     return(
-        <form className={Style.form_login}>
-            <h2>Login</h2>
+        <form className={name=="Login"?Style.form_login:Style.form_register}>
+            <h2>{name}</h2>
+            <Input type="text" placeholder="Nome" 
+                icon={iconUser}
+            />
             <Input type="text" placeholder="Usuário" 
-                icon={User}
+                icon={iconFingerprint}
+            />
+            <Input type="date" placeholder="Nascimento" 
+                icon={iconCalendar}
+            />
+            <Input type="email" placeholder="Email" 
+                icon={iconAt}
             />
             <Input type="password" placeholder="Senha" 
-                icon={Lock}
+                icon={iconLock}
+            />
+            <Input type="text" placeholder="Confirmar senha" 
+                icon={iconConfirm}
             />
             <Button text="Entrar"/>
         </form>

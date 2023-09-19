@@ -1,23 +1,39 @@
-.form_login{
+.form_login, .form_register{
     display: flex;
     flex-direction: column;
-    height: 46%;
+    height: 80%;
     width: 50%;
-    gap: 2.4rem;
+    gap: 1rem;
 }
-.form_login h2{
+.form_register{
+    height: 75%;
+}
+.form_login Input:not(:nth-child(2)):not(:nth-last-child(3)){
+    display: none;
+}
+.form_login h2, .form_register h2{
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-@media(max-width:375px){
+.form_register Input:nth-child(4)::-webkit-calendar-picker-indicator {
+    display: none;
+}
+@media(max-width:704px){
     .form_login{
         width: 80%;
         gap: 1.5rem;
     }
+    .form_register{
+        width: 80%;
+        height: 80%;
+    }
     .form_login h2{
         font-size: 1.8rem;
+    }
+    .form_register h2{
+        font-size: 1.5rem;
     }
 }
