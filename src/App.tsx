@@ -1,12 +1,11 @@
 import './App.css'
-import Login from './pages/login'
-import Register from './pages/register'
+import { Outlet } from 'react-router'
 
 function App(){
 
   return (
     <>
-      <Register/>
+      <Outlet/>
     </>
   )
 }

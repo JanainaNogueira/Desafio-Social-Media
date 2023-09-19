@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Form from '../../components/form'
 import Style from './index.module.css'
 
@@ -10,7 +11,7 @@ function Register(){
                     <p>Por favor, registre-se para continuar</p>
                 </div>
                 <Form name='Cadastro'/>
-                <a href='#'>Novo por aqui?<strong>Registre-se</strong></a>
+                <Link to="/">Novo por aqui?<strong>Registre-se</strong></Link>
             </main>
             <aside className={Style.side_image}>
             </aside>
