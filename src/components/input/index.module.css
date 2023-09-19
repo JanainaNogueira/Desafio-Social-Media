@@ -1,0 +1,15 @@
+@import '../../styles/variables.css';
+*{
+    background-color: black;
+}
+.input{
+    width: 50%;
+    border-radius: 4.6rem;
+    border: 2px solid var(--white, #F5F5F5);
+    color:var(--gray-gray-300);
+    background-repeat: no-repeat;
+    background-size: 1.3em;
+    background-position: 97%;
+    padding: 1.5rem 2rem;
+    cursor:pointer;
+}
