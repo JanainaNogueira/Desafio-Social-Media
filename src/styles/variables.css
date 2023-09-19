@@ -9,5 +9,6 @@
     --black:#000000;
     --orange:#fe2e05;
     --yellow:#e9b425;
-    --gradient-button:linear-gradient(180deg, #AD2D14 0%, #F42E07 100%)
+    --gradient-button:linear-gradient(180deg, #AD2D14 0%, #F42E07 100%);
+    --gradient-background:linear-gradient(180deg, #2E2F36 0%, #17181C 100%);
 }
