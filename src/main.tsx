@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import {Provider} from 'react-redux'
-import store from './redux/store'
+import {store} from './redux/store'
 import Login from "./pages/login"
 import Register from "./pages/register"
 import './index.css'

@@ -1,11 +1,12 @@
 import Style from './index.module.css'
 
 interface propsButton{
-    text:string
+    text:string,
+    onClick:()=>void
 }
-const Button:React.FC<propsButton>=({text})=>{
+const Button:React.FC<propsButton>=({text,onClick})=>{
     return(
-        <button className={Style.buttonDefault}>
+        <button onClick={onClick} className={Style.buttonDefault}>
             {text}
         </button>
     )

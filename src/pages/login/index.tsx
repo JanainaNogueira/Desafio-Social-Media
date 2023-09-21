@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
+import users from '../../data/users'
 import Form from '../../components/form'
 import Style from './index.module.css'
 
 function Login(){
+        console.log(users[0].usuario.nome)
     return(
         <div className={Style.container}>
             <main className={Style.main}>
