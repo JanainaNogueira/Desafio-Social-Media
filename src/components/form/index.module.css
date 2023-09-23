@@ -4,12 +4,16 @@
     height: 80%;
     width: 50%;
     gap: 1rem;
+    background-color: yellowgreen;
 }
 .form_register{
     height: 75%;
 }
-.form_login Input:not(:nth-child(2)):not(:nth-last-child(3)){
+.form_login Input:not(:nth-child(3)):not(:nth-last-child(3)){
     display: none;
+}
+.form_login_error Input::nth-last-child(4){
+    display: flex;
 }
 .form_login h2, .form_register h2{
     color: #ffffff;
@@ -21,6 +25,11 @@
 .form_register Input:nth-child(4)::-webkit-calendar-picker-indicator {
     display: none;
 }
+.error{
+    color:var(--yellow);
+    text-align:center
+}
+
 @media(max-width:704px){
     .form_login{
         width: 80%;

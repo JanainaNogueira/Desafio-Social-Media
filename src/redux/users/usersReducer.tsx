@@ -24,11 +24,18 @@ export const usersSlice = createSlice({
         login:(state,action)=> {
             state.userName =action.payload.userName;
             state.password = action.payload.password;
+        },
+        registration:(state,action)=>{
+            state.name=action.payload.name
+            state.userName =action.payload.userName;
+            state.password = action.payload.password;
+            state.nascimento=action.payload.nascimento;
+            state.email=action.payload.email;
         }
     }
 })
 
-export const {login} = usersSlice.actions
+export const {login, registration} = usersSlice.actions
 export const selectUser = (state:RootState)=>state.users
 
 export default usersSlice.reducer

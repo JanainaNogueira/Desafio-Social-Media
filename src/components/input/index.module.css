@@ -2,7 +2,6 @@
 .input{
     width: 100%;
     border-radius: 4.6rem;
-    border: 2px solid var(--white, #F5F5F5);
     color:var(--gray-gray-300);
     background: none;
     background-repeat: no-repeat;
@@ -13,8 +12,14 @@
     font-size: 1.1rem;
     font-style: normal;
 }
+.colorInput{
+    border: 2px solid var(--white, #F5F5F5);
+}
 @media(max-width:704px){
     .input{
         padding: 3.5%;
     }
+}
+.error{
+    border:2px solid var(--yellow, #b91b1b);
 }
