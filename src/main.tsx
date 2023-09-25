@@ -5,6 +5,7 @@ import {Provider} from 'react-redux'
 import {store} from './redux/store'
 import Login from "./pages/login"
 import Register from "./pages/register"
+import Perfil from "./pages/perfil"
 import './index.css'
 import App from './App'
 const router = createBrowserRouter([
@@ -15,10 +16,14 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Login/>
-    },
-    {
+      },
+      {
         path:"register",
         element:<Register/>
+      },
+      {
+        path:"perfil",
+        element:<Perfil/>
     }
     ]
   }

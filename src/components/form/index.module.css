@@ -1,10 +1,9 @@
 .form_login, .form_register{
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 71%;
     width: 50%;
-    gap: 1rem;
-    background-color: yellowgreen;
+    gap: 0.4rem;
 }
 .form_register{
     height: 75%;
@@ -17,17 +16,18 @@
 }
 .form_login h2, .form_register h2{
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.form_register Input:nth-child(4)::-webkit-calendar-picker-indicator {
+.form_register Input[name="NASCIMENTO"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 .error{
+    font-size: 0.7rem;
     color:var(--yellow);
-    text-align:center
+    text-align:center;
 }
 
 @media(max-width:704px){

@@ -11,7 +11,7 @@ function Register(){
                     <p>Por favor, registre-se para continuar</p>
                 </div>
                 <Form name='Cadastro'/>
-                <Link to="/">Novo por aqui?<strong>Registre-se</strong></Link>
+                <Link className={Style.navigation} to="/">Novo por aqui?<strong>Registre-se</strong></Link>
             </main>
             <aside className={Style.side_image}>
             </aside>

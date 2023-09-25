@@ -21,7 +21,7 @@
     font-weight: 500;
 }
 .main__text p{
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 400;
     
 }
@@ -30,9 +30,9 @@
     font-style: normal;
     line-height: normal;
 }
-.main a{
+.navigation{
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 .side_image{
     width: 50%;
@@ -67,7 +67,7 @@
         font-weight: 400;
         
     }
-    .main a{
+    .navigation{
         width: 90%;
         margin: 3%;
         text-align: center;

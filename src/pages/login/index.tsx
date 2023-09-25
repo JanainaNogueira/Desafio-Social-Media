@@ -4,7 +4,7 @@ import Form from '../../components/form'
 import Style from './index.module.css'
 
 function Login(){
-        console.log(users[0].usuario.nome)
+        console.log(users[0].nome)
     return(
         <div className={Style.container}>
             <main className={Style.main}>
@@ -13,7 +13,7 @@ function Login(){
                     <p>Para continuar navegando de forma segura, efetue o login</p>
                 </div>
                 <Form name='Login'/>
-                <Link to="register">Novo por aqui?<strong>Registre-se</strong></Link>
+                <Link className={Style.navigation} to="register">Novo por aqui?<strong>Registre-se</strong></Link>
             </main>
             <aside className={Style.side_image}>
             </aside>
