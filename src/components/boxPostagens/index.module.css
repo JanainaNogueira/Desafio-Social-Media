@@ -1,0 +1,110 @@
+.boxComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--gray-gray-700, #1E1F23);
+    border: 2px solid var(--gray-gray-600, #2E2F36);
+    height: 30%;
+    min-height: 30%;
+    width: 100%;
+    background: var(--gray-gray-700, #1E1F23);
+    border-radius: 0.8rem;
+    padding: 1%;
+}
+.infoPost{
+    color: #ffffff;
+    display: flex;
+    height: 40%;
+    align-items: center;
+    padding: 0 1.5%;
+}
+.infoPost__info{
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+}
+.perfilIcon{
+    width: 8%;
+    height: 60%;
+    background:url("../../assets/img/userImage.png") no-repeat;
+    background-position:center;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 2%;
+}
+.infoPost div h3{
+    font-size: 0.7rem;
+}
+.infoPost div p{
+    font-size: 0.5rem;
+}
+.message{
+    min-height: 20%;
+    padding-left: 5%;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+.buttonAction{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+.buttonAction button{
+    height: 80%;
+    width: 30%;
+    border: none;
+    font-size: 0.6rem;
+    background: none;
+    cursor: pointer;
+}
+.buttonDefaul{
+    color: #ffffff;
+}
+.buttonClicked{
+    color: var(--yellow)
+}
+
+.buttonAction button:nth-child(1){
+    background: url(../../assets/img/like.svg) no-repeat;
+    background-position:30%;
+}
+.buttonAction button:nth-child(2){
+    background: url(../../assets/img/comment.svg) no-repeat;
+    background-position:20%;
+}
+.buttonAction button:nth-child(3){
+    background: url(../../assets/img/share.svg) no-repeat;
+    background-position:20%;
+
+}
+.actionComment{
+    display: flex;
+    align-items: center;
+    height: 17%;
+}
+.comments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+    height: 90%;
+    width: 90%;
+    border-radius: 4.6rem;
+    background: var(--gray-gray-650, #27282F);
+}
+.iconPerfil{
+    width: 5%;
+    height: 85%;
+    background:url("../../assets/img/userImage.png") no-repeat;
+    background-position:center;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 2%;
+}
+.comments input{
+    width: 75%;
+    background: none;
+    border: none;
+}
