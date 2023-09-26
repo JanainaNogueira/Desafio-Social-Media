@@ -1,0 +1,14 @@
+:root{
+    --gray-900: #17181C;
+    --gray-gray-700: #1e1f23;
+    --gray-gray-650:#27282f;
+    --gray-gray-600:#2e2f36;
+    --gray-gray-300:#75767d;
+    --gray-gray-200:#a1a3a7;
+    --white:#f5f5f5;
+    --black:#000000;
+    --orange:#fe2e05;
+    --yellow:#e9b425;
+    --gradient-button:linear-gradient(180deg, #AD2D14 0%, #F42E07 100%);
+    --gradient-background:linear-gradient(180deg, #2E2F36 0%, #17181C 100%);
+}

@@ -1,0 +1,42 @@
+.aside{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    border: 2px solid var(--gray-gray-600, #2E2F36);
+    background: var(--gray-gray-700, #1E1F23);
+    height: 20%;
+    color: #ffffff;
+    padding:0 8% 0 10%;
+    justify-content: space-evenly;
+}
+.aside_menuOpen{
+    width: 70%;
+}
+.aside_menuClose{
+    width: 90%;
+}
+.aside__title{
+    display: flex;
+    justify-content: space-between;
+}
+.aside__title h3{
+    font-size: 0.7rem;
+}
+.perfil p, .perfil_menu p:nth-child(1){
+    font-size: 0.5rem;
+}
+.perfil_menu p:nth-child(2){
+    font-size: 0.4rem;
+    color: var(--gray-gray-300, #75767D);
+}
+.perfil,.perfil_menu{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+.perfil img, .perfil_menu img{
+    width: 10%;
+}
+.perfil_menu div{
+    
+}

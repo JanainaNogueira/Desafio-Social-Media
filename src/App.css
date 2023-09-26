@@ -1,0 +1,16 @@
+#root, body,html {
+  margin: 0;
+  padding: 0;
+  background: var(--gray-gray-900, #17181C);
+  height: 100%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}

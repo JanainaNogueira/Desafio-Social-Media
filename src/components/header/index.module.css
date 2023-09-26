@@ -1,0 +1,74 @@
+.header{
+    display: flex;
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-gray-600, #2E2F36);
+    background: var(--gray-gray-700, #1E1F23);
+    justify-content: space-between;
+    z-index: 1;
+}
+.headerMenu{
+    display: flex;
+    position: fixed;
+    left: 20.5%;
+    height: 8%;
+    width: 79%;
+    border-bottom: 1px solid var(--gray-gray-600, #2E2F36);
+    background: var(--gray-gray-700, #1E1F23);
+    justify-content: space-between;
+    z-index: 1;
+}
+.box_logo,.box_notifications{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 0.65rem;
+}
+.box_logo{
+    gap: 2%;
+    padding-left: 2%;
+    width: 20%;
+}
+.button_close{
+    background-color: #F42E07 ;
+    background-image: url(../../assets/img/ArrowFatLeft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 13%;
+    height: 70%;
+}
+.button_open{
+    background-color: #F42E07 ;
+    background-image: url(../../assets/img/ArrowFatLeft.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 15%;
+    height: 60%;
+}
+.box_notifications{
+    width: 20%;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+.box_notifications img{
+    width: 10%;
+}
+.iconPerfil{
+    background:url(../../assets/img/userImage.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    border-radius: 50%;
+    width: 14%;
+    height: 70%;
+}

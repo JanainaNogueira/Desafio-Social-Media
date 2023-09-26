@@ -1,0 +1,54 @@
+.form_login, .form_register{
+    display: flex;
+    flex-direction: column;
+    height: 71%;
+    width: 50%;
+    gap: 0.4rem;
+}
+.form_register{
+    height: 75%;
+}
+.form_login Input{
+    display: none;
+}
+.form_login Input[name="USERNAME"]{
+    display: flex;
+}
+.form_login Input[name="PASSWORD"]{
+    display: flex;
+}
+.form_login Input[name="error"]{
+    display: flex;
+}
+.form_login h2, .form_register h2{
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.form_register Input[name="NASCIMENTO"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.error{
+    font-size: 0.7rem;
+    color:var(--yellow);
+    text-align:center;
+}
+
+@media(max-width:704px){
+    .form_login{
+        width: 80%;
+        gap: 1.5rem;
+    }
+    .form_register{
+        width: 80%;
+        height: 80%;
+    }
+    .form_login h2{
+        font-size: 1.8rem;
+    }
+    .form_register h2{
+        font-size: 1.5rem;
+    }
+}
