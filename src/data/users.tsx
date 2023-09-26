@@ -14,7 +14,7 @@ const users =[
         },
         {
       "id": "7a18ef41-a972-4c19-8204-e605a6c1162b",
-      "nome": "Carlos",
+      "nome": "Viviane",
       "usuario": "vivi",
       "data_nascimento": "2001-04-18",
       "email": "carlos@teste.com",
@@ -27,8 +27,21 @@ const users =[
     },
     {
       "id": "8a18ef41-a972-4c19-8204-e605a6c1162b",
-      "nome": "Carlos",
+      "nome": "Marcia",
       "usuario": "marcia",
+      "data_nascimento": "2001-04-18",
+      "email": "carlos@teste.com",
+      "password":"teste",
+      "sexo": null,
+      "endereco": null,
+      "telefone": null,
+      "data_criacao": "2023-09-17T04:59:24.000000Z",
+      "data_alteracao": "2023-09-17T04:59:24.000000Z"
+    },
+    {
+      "id": "8a18ef81-a972-4c19-8204-e605a6c1162b",
+      "nome": "Tadeu",
+      "usuario": "tadinho",
       "data_nascimento": "2001-04-18",
       "email": "carlos@teste.com",
       "password":"teste",

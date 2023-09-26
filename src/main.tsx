@@ -8,6 +8,7 @@ import Register from "./pages/register"
 import Perfil from "./pages/perfil"
 import './index.css'
 import App from './App'
+import Home from './pages/home'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path:"register",
         element:<Register/>
+      },
+      {
+        path:"home",
+        element:<Home/>
       },
       {
         path:"perfil",

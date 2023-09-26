@@ -8,10 +8,16 @@
 .form_register{
     height: 75%;
 }
-.form_login Input:not(:nth-child(3)):not(:nth-last-child(3)){
+.form_login Input{
     display: none;
 }
-.form_login_error Input::nth-last-child(4){
+.form_login Input[name="USERNAME"]{
+    display: flex;
+}
+.form_login Input[name="PASSWORD"]{
+    display: flex;
+}
+.form_login Input[name="error"]{
     display: flex;
 }
 .form_login h2, .form_register h2{

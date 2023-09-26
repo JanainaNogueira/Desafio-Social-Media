@@ -1,6 +1,6 @@
 import { useAppSelector, useAppDispatch } from '../../redux/hooks'
 import {login} from '../../redux/users/usersReducer'
-import { useNavigation } from 'react-router-dom'
+import { useNavigation,withRouter, RouteComponentProps } from 'react-router-dom'
 import {useState} from 'react'
 import users from '../../data/users'
 
@@ -17,6 +17,7 @@ import Button from '../../components/button'
 interface propsForm{
     name:string
 }
+interface ButtonPropsNavigation extends RouteComponentProps<any> {}
 
 const Formulario:React.FC<propsForm>=(props)=>{
     const [userName,setUserName]=useState('')
@@ -35,22 +36,14 @@ const Formulario:React.FC<propsForm>=(props)=>{
     function userLogin(event){
         event.preventDefault()
         const inputs = document.querySelectorAll('Input')
-        users.map((user)=>{
-            if(user.usuario === userName && user.password === password){
+            if(users.some((user)=>user.usuario===userName && user.password === password)){
                 //setar erro
-                Array.from(inputs).forEach((input)=>{
-                    if(input.name=="USUARIO" || input.name=="PASSWORD"){
-                        //inputs[0].attributes[4].nodeValue="false"
-                    }
-                })
-                dispatch(login({userName,password}))
                 setErrorLogin(false)
-
+                dispatch(login({userName,password}))
             }else{
                 //altera classe se tiver erro
                 setErrorLogin(true)
             }
-        })
     }
     //verificar inputs
     function verifInputs(event){

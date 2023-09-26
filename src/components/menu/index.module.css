@@ -1,6 +1,7 @@
 .menu_lateral{
     padding-left: 1.6%;
     flex-direction: column;
+    position: fixed;
     background-color: var(--gray-gray-700);
     width: 0%;
     top: 0;
@@ -32,7 +33,9 @@
     flex-direction: column;
     border: 1px solid var(--gray-gray-600, #2E2F36);
 }
-.menu button{
+.navigationMenu{
+    text-align: center;
+    background-color: yellowgreen;
     cursor: pointer;
     font-size: 0.7rem;
     border:none;
@@ -40,6 +43,6 @@
     background: none;
     color: #ffffff;
 }
-.menu button:hover{
+.navigationMenu:hover{
     background-color: var(--orange, #FE2E05);
 }

@@ -6,6 +6,9 @@ import iconImage from '../../assets/img/iconImage.svg'
 import iconClip from '../../assets/img/clip.svg'
 import iconPin from '../../assets/img/localizacao.svg'
 import iconEmoji from '../../assets/img/emoji.svg'
+import iconLike from '../../assets/img/like.svg'
+import iconComments from '../../assets/img/comment.svg'
+import iconShare from '../../assets/img/share.svg'
 import Style from './index.module.css';
 
 function BoxPost(){
@@ -24,12 +27,21 @@ function BoxPost(){
                 <AiOutlineEllipsis/>
             </div>
             <div className={Style.message}>
-                <p>Mensagem</p>
+                <p>MensagemMensagemMensagemMensagemMensagemMensagemMensagemMensagemMensagemMensagemMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemvMensagemv</p>
             </div>
-            <div className={Style.buttonAction}>
-                <button onClick={handleLike} className={isLike?Style.buttonClicked:Style.buttonDefaul}>Curtir</button>
-                <button className={Style.buttonDefaul}>Comentários</button>
-                <button className={Style.buttonDefaul}>Compartilhar</button>
+            <div className={Style.buttonsAction}>
+                <label>
+                    <img src={iconLike}/>
+                    <button onClick={handleLike} className={isLike?Style.buttonClicked:Style.buttonDefaul}>Curtir</button>
+                </label>
+                <label>
+                    <img src={iconComments}/>
+                    <button className={Style.buttonDefaul}>Comentários</button>
+                </label>
+                <label>
+                    <img src={iconShare}/>
+                    <button className={Style.buttonDefaul}>Compartilhar</button>
+                </label>
             </div>
             <div className={Style.actionComment}>
                 <div className={Style.iconPerfil}></div>

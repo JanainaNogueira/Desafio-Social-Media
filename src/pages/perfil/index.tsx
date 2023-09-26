@@ -1,3 +1,4 @@
+import { useAppSelector, useAppDispatch } from '../../redux/hooks'
 import {useState} from 'react'
 import Menu from "../../components/menu"
 import Header from "../../components/header"
@@ -9,8 +10,11 @@ import ImageExcluir2 from '../../assets/img/userImage.png'
 import ImageExcluir from "../../assets/img/item-excluir.png"
 import BoxPost from "../../components/boxPostagens"
 function Perfil(){
+    const loginValue = useAppSelector(state=>state.users)
+    const dispatch = useAppDispatch()
+    
     const [openMenu,setOpenMenu]=useState(false)
-    console.log(openMenu)
+    
     const editPerfil=()=>{
         console.log('editar perfil')
     }
