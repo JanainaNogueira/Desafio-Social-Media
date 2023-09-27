@@ -37,6 +37,9 @@
 .perfil img, .perfil_menu img{
     width: 10%;
 }
-.perfil_menu div{
-    
+
+@media (max-width:704px){
+    .aside{
+        display: none;
+    }
 }

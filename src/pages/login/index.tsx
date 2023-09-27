@@ -4,7 +4,6 @@ import Form from '../../components/form'
 import Style from './index.module.css'
 
 function Login(){
-        console.log(users[0].nome)
     return(
         <div className={Style.container}>
             <main className={Style.main}>

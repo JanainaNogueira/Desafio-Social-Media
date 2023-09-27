@@ -40,7 +40,7 @@ const Formulario:React.FC<propsForm>=(props)=>{
                 //setar erro
                 setErrorLogin(false)
                 dispatch(login({userName,password}))
-                navigate('./home')
+                navigate('/home')
             }else{
                 //altera classe se tiver erro
                 setErrorLogin(true)
@@ -48,7 +48,6 @@ const Formulario:React.FC<propsForm>=(props)=>{
     }
     // registrar
     function register(){
-        console.log("aqui")
         if(errorRegisterPassword!=true && errorRegisterUser!= true){
             dispatch(registration({userName,password,realName,nascimento,email}))
             navigate('/home')
@@ -68,7 +67,7 @@ const Formulario:React.FC<propsForm>=(props)=>{
                     }
                 break;
                 case "USERNAME":
-                    if(users.some((user)=>user.usuario == userName) || userName ==""){
+                    if(users.some((user)=>user.usuario === userName) || userName ==""){
                         setErrorRegisterUser(true)
                     }else{
                         setErrorRegisterUser(false)
