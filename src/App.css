@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   background: var(--gray-gray-900, #17181C);
-  height: 100%;
+  height: 100vh;
 }
 
 *{
