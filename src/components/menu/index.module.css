@@ -48,3 +48,8 @@
 .navigationMenu:hover{
     background-color: var(--orange, #FE2E05);
 }
+@media (max-width:704px){
+    .navigationMenu{
+        font-size: 0.4rem;
+    }
+}
