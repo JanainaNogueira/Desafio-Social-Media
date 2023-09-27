@@ -18,6 +18,7 @@
 @media(max-width:704px){
     .input{
         padding: 3.5%;
+        background-size: 6%;
     }
 }
 .error{

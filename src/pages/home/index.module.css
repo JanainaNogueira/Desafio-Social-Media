@@ -37,3 +37,9 @@
     margin-top: 7%;
     width: 20%;
 }
+
+@media (max-width:704px){
+    .container__central{
+        width: 100%;
+    }   
+}

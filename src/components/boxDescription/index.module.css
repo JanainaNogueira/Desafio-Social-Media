@@ -30,3 +30,9 @@
     font-size: 0.6rem;
     font-family: 'Nunito', sans-serif;
 }
+
+@media (max-width:704px){
+    .container{
+        width: 100%;
+    }
+}

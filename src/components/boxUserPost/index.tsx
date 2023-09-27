@@ -21,7 +21,7 @@ function BoxUserPost(){
                     <img src={iconPin}/>
                     <img src={iconEmoji}/>
                     <div>
-                        <Button text="Postar" onClick=""/>
+                        <Button text="Postar" onClick={()=>{}}/>
                     </div>
                 </div>
             </div>

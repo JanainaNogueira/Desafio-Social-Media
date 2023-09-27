@@ -97,3 +97,29 @@
     font-size: 0.8rem;
     font-weight: 400;
 }
+@media (max-width:704px){
+    .box_postPerfil{
+        flex-direction: column;
+        align-items: center;
+    }
+    .titleSection{
+        width: 70%;
+    }
+    .postsPerfil{
+        width: 97%;
+    }
+    .information{
+        justify-content: end;
+    }
+    .box_information{
+        width: 50%;
+    }
+    .box_button{
+        width: 30%;
+        margin-right: 2%;
+    }
+    .imagePerfil{
+        height: 30%;
+        width: 20%;
+    }
+}

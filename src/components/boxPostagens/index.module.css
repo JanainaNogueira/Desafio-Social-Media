@@ -116,3 +116,16 @@
     margin: 1%;
     object-fit: contain;
 }
+@media (max-width:704px){
+    .infoPost{
+        gap: 5%;
+        padding: 0  3%;
+    }
+    .iconPerfil{
+        width: 8%;
+    }
+    .actionComment img{
+        width: 5%;
+    }
+
+}
