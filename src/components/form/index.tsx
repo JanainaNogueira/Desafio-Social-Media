@@ -1,6 +1,6 @@
 import { useAppSelector, useAppDispatch } from '../../redux/hooks'
-import {login} from '../../redux/users/usersReducer'
-import { useNavigation,withRouter, RouteComponentProps } from 'react-router-dom'
+import {login, registration} from '../../redux/users/usersReducer'
+import { withRouter, RouteComponentProps, useNavigate } from 'react-router-dom'
 import {useState} from 'react'
 import users from '../../data/users'
 
@@ -17,7 +17,6 @@ import Button from '../../components/button'
 interface propsForm{
     name:string
 }
-interface ButtonPropsNavigation extends RouteComponentProps<any> {}
 
 const Formulario:React.FC<propsForm>=(props)=>{
     const [userName,setUserName]=useState('')
@@ -32,6 +31,7 @@ const Formulario:React.FC<propsForm>=(props)=>{
 
     const loginValue = useAppSelector(state=>state.users)
     const dispatch = useAppDispatch()
+    const navigate =useNavigate()
     //verifica os dados de login
     function userLogin(event){
         event.preventDefault()
@@ -40,10 +40,19 @@ const Formulario:React.FC<propsForm>=(props)=>{
                 //setar erro
                 setErrorLogin(false)
                 dispatch(login({userName,password}))
+                navigate('./home')
             }else{
                 //altera classe se tiver erro
                 setErrorLogin(true)
             }
+    }
+    // registrar
+    function register(){
+        console.log("aqui")
+        if(errorRegisterPassword!=true && errorRegisterUser!= true){
+            dispatch(registration({userName,password,realName,nascimento,email}))
+            navigate('/home')
+        }
     }
     //verificar inputs
     function verifInputs(event){
@@ -59,19 +68,16 @@ const Formulario:React.FC<propsForm>=(props)=>{
                     }
                 break;
                 case "USERNAME":
-                    if(users.some((user)=>user.usuario === userName)){
+                    if(users.some((user)=>user.usuario == userName) || userName ==""){
                         setErrorRegisterUser(true)
                     }else{
                         setErrorRegisterUser(false)
                     }
                 break;
-                default:
-                    if(errorRegisterPassword!=true && errorRegisterUser!= true){
-                        dispatch(login({userName,password,realName,nascimento,email}))
-                    }
-                break;
             }
         })
+        register()
+
     }
 
     return(
@@ -82,7 +88,7 @@ const Formulario:React.FC<propsForm>=(props)=>{
                 onChange={(e)=>setRealName(e.target.value,e)}
                 
             />
-            <Input name={errorLogin?"error":errorRegisterUser?"error":"USERNAME"} type="text" placeholder={props.name=="Login"?"Usuário":"Nome"}  
+            <Input name={errorLogin?"error":errorRegisterUser?"error":"USERNAME"} type="text" placeholder="Usuário"  
                 onChange={(e)=>setUserName(e.target.value,e)}
                 icon={props.name=="Login"?iconUser:iconFingerprint}
                 maxLength={255}
